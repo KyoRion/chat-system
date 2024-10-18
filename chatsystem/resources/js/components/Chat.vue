@@ -18,6 +18,7 @@ export default {
     mounted() {
         this.fetchMessages();
         Echo.channel('chat').listen('MessageSent', (message) => {
+            console.log('Message received:', message.message);
             this.messages.push(message);
         });
     },

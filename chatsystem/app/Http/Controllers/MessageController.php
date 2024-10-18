@@ -27,7 +27,7 @@ class MessageController extends Controller
         $message->message = $request->message;
         $message->save();
 
-        event(new MessageSent($request->message));
+        broadcast(new MessageSent($message->message));
 
         return $message;
     }
