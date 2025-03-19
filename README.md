@@ -1,8 +1,8 @@
 # chat-system
 Demo function chat system with laravel
-This source using tech stack: Laravel 11 - Laravel Echo - VueUI
+This source using tech stack: Laravel 11 - Laravel Reverb - VueUI
 
-Application will work realtime when hosting with real domain un-work when it still running on local
+Application chat box handle realtime by reverb
 
 # Documentation
 
