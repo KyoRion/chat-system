@@ -10,12 +10,13 @@ Application will work realtime when hosting with real domain un-work when it sti
 2. Run ```npm install```
 3. Setup database to application
 4. Run ```php artisan migrate```
-5. Run ```npm run dev``` & ```php artisan serve```
-6. Check it out! you can send message with multiple account (need refresh to see message if you lauch it on localhost)
+5. Run ```npm run dev``` & ```php artisan serve``` & ```php artisan reverb:start``` & ```php artisan queue:work```
+6. Check it out! you can send message with multiple account ~~(need refresh to see message if you lauch it on localhost)~~ UPDATE: now it's handle with realtime chat
 
 TO DO LIST
-1. Upgrade UI chatbox
-2. Live demo
-3. Add emoji when send message
-4. Make list chat for users & Send private message to another user
-5. Update later..
+~~1. Upgrade UI chatbox~~
+~~2. Handle realtime chat~~
+3. Live demo
+4. Add emoji when send message
+5. Make list chat for users & Send private message to another user
+6. Update later..
