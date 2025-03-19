@@ -1,4 +1,4 @@
-# chat-system
+# Chat-System
 Demo function chat system with laravel
 This source using tech stack: Laravel 11 - Laravel Reverb - VueUI
 
@@ -23,4 +23,4 @@ TO DO LIST <br>
 
 # Example:
 
-![Alt Text](assets/example.gif)
+![GIF Preview](assets/example.gif)
