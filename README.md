@@ -20,3 +20,7 @@ TO DO LIST <br>
 4. Add emoji when send message <br>
 5. Make list chat for users & Send private message to another user <br>
 6. Update later..
+
+# Example:
+
+![Alt Text](assets/example.gif)
