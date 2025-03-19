@@ -15,8 +15,9 @@ class MessageController extends Controller
         return Message::with('user')->get();
     }
 
-    public function store(Request $request): Message
+    public function store(Request $request): array
     {
+        $user = Auth::user();
         // Validate and store a new message
         $request->validate([
             'message' => 'required',
@@ -27,8 +28,8 @@ class MessageController extends Controller
         $message->message = $request->message;
         $message->save();
 
-        broadcast(new MessageSent($message->message));
+        broadcast(new MessageSent($message, $user))->toOthers();
 
-        return $message;
+        return ['message' => $message->load('user')];
     }
 }
